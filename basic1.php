@@ -1,6 +1,8 @@
 <html>
 <head>
-    <title>Add New Record in MySQL Database</title>
+    <title>
+        Add New Record in MySQL Database
+    </title>
 </head>
 <body>
 <?php

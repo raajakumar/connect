@@ -23,9 +23,6 @@ if(isset($_POST['add']))
     if(! get_magic_quotes_gpc() )
     {
         $name = addslashes ($_POST['name']);
-
-
-
     $sql = "INSERT INTO test4 ".
         "(name,regid, age, dob,phoneno) ".
         "VALUES('$name',$regid,$age,'$dob',$phoneno)";

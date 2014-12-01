@@ -1,4 +1,9 @@
-
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
 <head>
     <title>Add New Record in MySQL Database</title>
@@ -18,22 +23,16 @@ if(isset($_POST['add']))
     if(! get_magic_quotes_gpc() )
     {
         $name = addslashes ($_POST['name']);
-    $sql = "INSERT INTO test4 ".
-        "(name,regid, age, dob,phoneno) ".
-        "VALUES('$name',$regid,$age,'$dob',$phoneno)";
-    mysql_select_db('sample');
-    $retval = mysql_query( $sql, $conn );
+   
     if(! $retval )
     {
         die('Could not enter data: ' . mysql_error());
     }
     echo "Entered data successfully\n";
     mysql_close($conn);
-    }
 }
 else
 {
-}
     ?>
     <form method="post" action="<?php $_PHP_SELF ?>">
         <table width="400" border="5" cellspacing="1" cellpadding="2">

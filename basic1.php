@@ -23,14 +23,7 @@ if(isset($_POST['add']))
     if(! get_magic_quotes_gpc() )
     {
         $name = addslashes ($_POST['name']);
-
-
-
-    $sql = "INSERT INTO test4 ".
-        "(name,regid, age, dob,phoneno) ".
-        "VALUES('$name',$regid,$age,'$dob',$phoneno)";
-    mysql_select_db('sample');
-    $retval = mysql_query( $sql, $conn );
+   
     if(! $retval )
     {
         die('Could not enter data: ' . mysql_error());

@@ -69,7 +69,6 @@ else
         </table>
     </form>
 <?php
-    echo("test");
 }
 ?>
 </body>

@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
 <head>
-    <title>Add New Record in MySQL Database</title>
+   
 </head>
 <body>
 <?php
